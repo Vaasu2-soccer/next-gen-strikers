@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Gen Strikers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="loading-bar">
+        <div class="progress"></div>
+    </div>
+    <div class="game-container">
+        <h1>Next Gen Strikers</h1>
+        <div class="auth">
+            <!-- Authentication Section -->
+            <h2>Login / Signup</h2>
+            <input type="text" placeholder="Username" id="username" />
+            <input type="password" placeholder="Password" id="password" />
+            <button onclick="authenticate()">Submit</button>
+        </div>
+        <div class="gacha-system">
+            <h2>Gacha Spin</h2>
+            <button onclick="spinGacha('normal')">Normal Spin (250)</button>
+            <button onclick="spinGacha('lucky')">Lucky Spin (500)</button>
+            <button onclick="spinGacha('super')">Super Spin (1000)</button>
+            <button onclick="spinGacha('ultra')">Ultra Spin (2500)</button>
+        </div>
+        <div class="match-selection">
+            <h2>Select Match Type</h2>
+            <button onclick="startMatch('public', 2)">Public 2v2</button>
+            <button onclick="startMatch('public', 4)">Public 4v4</button>
+            <button onclick="startMatch('private', 2)">Private 2v2</button>
+            <button onclick="startMatch('private', 4)">Private 4v4</button>
+            <button onclick="startMatch('ranked', 2)">Ranked 2v2</button>
+            <button onclick="startMatch('ranked', 4)">Ranked 4v4</button>
+        </div>
+        <div class="ranked-system">
+            <h2>Your Rank</h2>
+            <p>Badges: <span id="badges"></span></p>
+            <p>Stars: <span id="stars"></span></p>
+        </div>
+        <div class="private-match-code">
+            <h2>Create Private Match</h2>
+            <input type="text" placeholder="Room Code" id="roomCode" />
+            <button onclick="createPrivateMatch()">Create Match</button>
+        </div>
+        <div class="team-selection">
+            <h2>Select Your Team</h2>
+            <button onclick="selectTeam('teamA')">Team A</button>
+            <button onclick="selectTeam('teamB')">Team B</button>
+        </div>
+        <div class="pitch-cutscene">
+            <h2>Pitch Cutscene</h2>
+            <video src="pitch-cutscene.mp4" controls></video>
+        </div>
+        <div class="scoring-cards">
+            <h2>Player Scoring Cards</h2>
+            <!-- Player Cards with Audio -->
+            <button onclick="playAudio('tiki_tiki.mp3')">Show Player Cards</button>
+        </div>
+    </div>
+    <script>
+        // Your JavaScript game logic goes here.
+        function authenticate() {
+            // Authentication logic
+        }
+
+        function spinGacha(type) {
+            // Gacha spin logic
+        }
+
+        function startMatch(matchType, players) {
+            // Match starting logic
+        }
+
+        function createPrivateMatch() {
+            // Private match creation logic
+        }
+
+        function selectTeam(team) {
+            // Team selection logic
+        }
+
+        function playAudio(audioFile) {
+            const audio = new Audio(audioFile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
