@@ -1,0 +1,32 @@
+{
+  "game": {
+    "title": "NEXT GEN STRIKERS: THE FUTURE OF FOOTBALL",
+    "version": "1.0.0",
+    "targetFPS": 60
+  },
+  "gameplay": {
+    "maxPlayers": 16,
+    "teamSizes": [4, 8],
+    "matchDuration": 1800,
+    "halfDuration": 900
+  },
+  "economy": {
+    "dailyReward": 1500,
+    "spinCosts": {
+      "standard": 100,
+      "lucky": 750,
+      "ultra": 2000,
+      "infinity": 4000
+    }
+  },
+  "flowState": {
+    "activationThreshold": 0.35,
+    "minBuffPercentage": 5,
+    "maxBuffPercentage": 75,
+    "maxBuffCount": 4
+  },
+  "ranking": {
+    "totalRanks": 12,
+    "starsPerRank": 5
+  }
+}
